@@ -40,7 +40,7 @@ def imprimir_menu():
 def cadastrar_tarefa(titulo, itens):
     global numero_tarefa
 
-    # controle de tarefa concluída o não concluída
+    # controle de tarefa concluída ou não concluída
     concluida = False        
 
     # dicionario que armazena temporariamente cada tarefa
@@ -57,6 +57,7 @@ def cadastrar_tarefa(titulo, itens):
     numero_tarefa += 1
     
     # alimenta a lista de tarefas com o dicionário gerado no passo anterior
+    # Append() adiciona um item ao final da lista
     tarefas.append(tarefa)
     print("\nTarefa cadastrada com sucesso!")
 
@@ -64,13 +65,13 @@ def listar_tarefas(): # [
     #     {chave: valor, chave: valor, chave: ["", "", ""], chave:valor}, 
     #     {chave: valor, chave: valor, chave: ["", "", ""], chave:valor}, 
     #     {chave: valor, chave: valor, chave: ["", "", ""], chave:valor}
-    # ]   
+    # ]  
     # controle do número de tarefas
     if tarefas == []:
         print("Não há tarefas cadastradas!")
     else:
         for tarefa in tarefas:        
-            # TODO: informação acerca da tarefa estar concluída ou não
+            # TODO: informação acerca da tarefa estar concluída ou não - opcional, caso tarefa concluida, um resultado, caso não, outro resultado
             print(f"\n*** TAREFA {tarefa["numero"]} ***")
             print(tarefa["Título"])
             for elemento in tarefa["Item"]:

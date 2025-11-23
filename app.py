@@ -48,7 +48,7 @@ while continuar_programa:
                 if item != "":
                     itens.append(item)
         
-        # verifica se itens está vazio e interrompe o fluxo caso esteja        
+        # verifica se itens está vazio e interrompe o fluxo caso esteja        1
         if itens == []:
             print("\nItem obrigatório")
             continue
@@ -58,12 +58,16 @@ while continuar_programa:
         input("\nPressione Enter para continuar...") 
 
     # listar tarefa
+    #TODO: Problema após apagar a tarefa 1, ele não reseta a 1 ao começar uma nova lista
     elif opcao == "2":
         limpar_tela()
         listar_tarefas()
         input("\nPressione Enter para continuar...")        
 
-    # marcar tarefa como concluída
+    # marcar tarefa como concluída 
+    #TODO: Não aparece como concluida ao listar tarefa apos marcar a conclusao, precisa exibir qual tarefa marcada foi concluida
+    #TODO: Erro na mensagem de conclusão: Tarefas concluídas: 0/20
+    
     elif opcao == "3":
         limpar_tela()
         listar_tarefas()
