@@ -1,0 +1,8 @@
+
+1;Reunião;['Slides', 'Relatóio'];False
+2;Compras;['Detergente'];False
+3;Estudar;['Direito Adm', 'Direito Constitucional'];False
+1;Ler;['Livro 1', 'Livro 2'];False
+1;Reunião;['Slides', 'Relatório'];False
+2;Reunião;['Slides'];False
+3;Compras;['Sabonete'];False

@@ -1,0 +1,100 @@
+# entradas.txt
+1
+reunião
+preparar slides
+preparar relatório
+preparar coffeebreak
+enviar emails
+solicitar relação de clientes
+solicitar relação de funcionários
+solicitar relação de estoque
+0
+Enter
+1
+compras do mês
+detergente líquido
+papel toalha
+sabonete
+sabão em pó
+frutas
+arroz
+feijão
+batata
+macarrão
+papel higiênico
+filtro de papel
+pó de café
+pão integral
+queijo
+manteiga
+0
+Enter
+1
+estudar
+cap1
+fazer resumo cap1
+exercicios cap1
+cap2
+fazer resumo cap2
+exercicios cap2
+estudar resumo cap1
+cap3
+fazer resumo cap3
+exercicios cap3
+estudar resumo cap2
+revisar resumo cap1
+0
+Enter
+1
+Aniversário da Vovó
+lista de convidados
+encomendar bolo
+encomendar salgados
+comprar refrigerantes
+comprar sucos
+comprar água com gás
+comprar ingredientes do cachorro-quente
+comprar vela
+comprar balão de decoração
+reservar salão de festa
+0
+Enter
+1
+Futebol
+separar uniforme
+separar meião
+separar chuteira
+separar caneleira
+separar garrafa d'água
+separar pré-treino
+separar whey protein
+separar mochila do treino
+separar toalha e material de limpeza
+separar roupa trabalho, sapato, cinto
+2
+Enter
+3
+2
+Enter
+4
+3
+Enter
+1
+estudar
+cap4
+fazer resumo cap4
+exercicios cap4
+cap5
+fazer resumo cap5
+exercicios cap5
+estudar resumo cap4
+cap6
+fazer resumo cap6
+exercicios cap6
+estudar resumo cap5
+revisar resumo cap4
+revisar resumo cap3
+revisar resumo cap2
+revisar resumo cap1
+0
+Enter
