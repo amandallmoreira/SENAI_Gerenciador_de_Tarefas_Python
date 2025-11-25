@@ -19,14 +19,16 @@ while continuar_programa:
         limpar_tela()
         
         # captura os dados da tarefa com input e os armazena em variáveis
-        print("\n___DADOS DA TAREFA___")
+        print("\n*** DADOS DA TAREFA ***")
         
         # captura o título da tarefa com input e o armazena na variável 'titulo'
         titulo = input("Digite o titulo: ").title()
 
         # controle para impedir título vazio: interrompe o fluxo e retorna ao menu
         if titulo == "":
-            print("\nTítulo obrigatório")
+            print("\n*** Título obrigatório - Tarefa não cadastrada! ***")            
+            input("\nPressione Enter para continuar...")
+            limpar_tela()
             continue
 
         # lista de itens: recebe cada item cadastrado pelo usuário
@@ -48,9 +50,11 @@ while continuar_programa:
                 if item != "":
                     itens.append(item)
         
-        # verifica se itens está vazio e interrompe o fluxo caso esteja        1
+        # verifica se itens está vazio e interrompe o fluxo caso esteja        
         if itens == []:
-            print("\nItem obrigatório")
+            print("\n*** Item obrigatório - Tarefa não cadastrada! ***")            
+            input("\nPressione Enter para continuar...")
+            limpar_tela()
             continue
 
         # função para gerar a lista de tarefas       
@@ -58,26 +62,33 @@ while continuar_programa:
         input("\nPressione Enter para continuar...") 
 
     # listar tarefa
-    #TODO: Problema após apagar a tarefa 1, ele não reseta a 1 ao começar uma nova lista
-    elif opcao == "2":
-        limpar_tela()
-        listar_tarefas()
-        input("\nPressione Enter para continuar...")        
+    elif opcao == "2":        
+        listar_tarefas()                
 
-    # marcar tarefa como concluída 
-    #TODO: Não aparece como concluida ao listar tarefa apos marcar a conclusao, precisa exibir qual tarefa marcada foi concluida
-    #TODO: Erro na mensagem de conclusão: Tarefas concluídas: 0/20
-    
+    # marcar tarefa como concluída
     elif opcao == "3":
         limpar_tela()
-        listar_tarefas()
+        for tarefa in tarefas:                    
+                print(f"\n*** TAREFA {tarefa["numero"]} ***")
+                print(tarefa["Título"])
+                for elemento in tarefa["Item"]:
+                    print(f'- {elemento}')                
         numero_tarefa = int(input("\nDigite a tarefa que quer marcar como concluída: "))
         marcar_concluida(numero_tarefa)
         input("\nPressione Enter para continuar...")        
 
     # deletar tarefa
     elif opcao == "4":
-        listar_tarefas()
+        limpar_tela()
+        for tarefa in tarefas:                    
+                print(f"\n*** TAREFA {tarefa["numero"]} ***")
+                print(tarefa["Título"])
+                for elemento in tarefa["Item"]:
+                    print(f'- {elemento}')
+                if tarefa["concluida"] == True:    
+                    print("Concluída: ✔")        
+                else:
+                    print("Concluída: ❌")
         numero_tarefa = int(input("\nDigite a tarefa que quer deletar: "))
         deletar_tarefa(numero_tarefa)
         input("\nPressione Enter para continuar...")        
