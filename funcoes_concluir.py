@@ -1,0 +1,17 @@
+from funcoes_arquivo import salvar_tarefas_em_arquivo
+from funcoes_excluir import deletar_tarefa
+
+def marcar_concluida(id_tarefa_concluir, tarefas):
+    for tarefa in tarefas:
+        if tarefa["id"] == id_tarefa_concluir:
+            tarefa["concluida"] = True
+            # atualiza o arquivo
+            salvar_tarefas_em_arquivo(tarefas)
+            print("\nConcluída com sucesso!")            
+    opcao = input(
+        "Excluir a tarefa concluída? ('1' para sim, 'Enter' para não):")
+    if opcao == "1":
+        deletar_tarefa(int(id_tarefa_concluir))
+        input("\nPressione 'Enter' para continuar...")
+    else:
+        return
