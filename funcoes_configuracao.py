@@ -2,7 +2,7 @@
 import os
 
 # import funcoes do sistema
-from funcoes_configuracao import *
+from funcoes_configuracao import * #TODO Estamos em funcoes_configuracao
 import art
 
 # lista que armazena o conjunto de tarefas
@@ -23,6 +23,7 @@ def limpar_tela():
     """Função que apaga todos os dados digitados no console realizando uma limpeza da tela com a finalidade de despoluição visual."""
     os.system('cls')
 
+#imprime a Arte do menu
 def imprimir_art():
     print(art.gtp)
     print("Por Amanda, Fabiana e Marcone")
@@ -51,9 +52,11 @@ def imprimir_menu():
     print("4. Excluir")
     print("0. Sair")
 
+#imprime opção invalida caso o usuario digite uma opção errada
 def exibir_opcao_invalida():
     print("=== Opção Inválida! ===")
 
+#exibe a Tarefa cadastrada com o Status Pendente
 def exibir_tarefa(tarefa):
     print(f'\n=== Tarefa {tarefa["id"]} ===')
     print(f'Título: {tarefa["titulo"]}')

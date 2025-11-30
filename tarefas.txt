@@ -1,2 +1,1 @@
-1;Comprar;Sabonete;True;
-2;Ligar;Tia Maria;False;
+3;Estudar;Banco De Dados:Python;True;

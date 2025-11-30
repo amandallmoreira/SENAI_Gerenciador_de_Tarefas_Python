@@ -52,4 +52,5 @@ def listar_tarefas(tarefas):
 
         # retornar sem listar
         else:
+            #Retorna ao menu inicial
             return
