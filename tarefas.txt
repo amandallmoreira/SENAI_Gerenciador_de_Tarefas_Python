@@ -1,1 +1,0 @@
-3;Estudar;Banco De Dados:Python;True;

@@ -1,4 +1,4 @@
-from funcoes_configuracao import limpar_tela, exibir_tarefa
+from app.funcoes_configuracao import limpar_tela, exibir_tarefa
 import art
 
 def imprimir_menu_listar_tarefas():
@@ -8,7 +8,8 @@ def imprimir_menu_listar_tarefas():
     print("3. Pendentes")
     print("0. Voltar")
 
-def listar_tarefas(tarefas):    
+def listar_tarefas(tarefas):
+    """Recebe a lista de tarefas para exibição"""    
     if tarefas == []:
         print("\nNenhuma tarefa encontrada.")
         input("\nPressione 'Enter' para continuar...")
@@ -19,9 +20,9 @@ def listar_tarefas(tarefas):
         # listar todas as tarefas        
         if op == "1":
             limpar_tela()
-            print(art.tarefas)            
-            for tarefa in tarefas:
-                exibir_tarefa(tarefa)
+            print(art.tarefas)                        
+            for tarefa in tarefas:                
+                exibir_tarefa(tarefa)                
             input("\nPressione 'Enter' para continuar...")
 
         # listar apenas as concluídas        
@@ -52,5 +53,4 @@ def listar_tarefas(tarefas):
 
         # retornar sem listar
         else:
-            #Retorna ao menu inicial
             return
